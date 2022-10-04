@@ -31,4 +31,27 @@ function createprojectli() {
   document.getElementById("pdesc").value = "";
 }
 
+function fetchval() {
+  fname = document.getElementById("fname").value;
+  lname = document.getElementById("lname").value;
+  gm = document.getElementById("gm").value;
+  ghub = document.getElementById("ghub").value;
+  pnumb = document.getElementById("pnumb").value;
+  loc = document.getElementById("loc").value;
+  sk = document.getElementById("sk").value;
+  ed1 = document.getElementById("ed1").value;
+  ed2 = document.getElementById("ed2").value;
+  abtme = document.getElementById("abtme").value;
+  pdesc = document.getElementById("pdesc").value;
+  pname = document.getElementById("pname").value;
+}
+
 const resume = document.getElementById("mRC");
+
+function createR1() {
+  fetchval();
+  resume.innerHTML = `
+  <h1>${fname}</h1>
+    
+  `;
+}
