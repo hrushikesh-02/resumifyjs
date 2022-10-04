@@ -30,3 +30,5 @@ function createprojectli() {
   document.getElementById("pname").value = "";
   document.getElementById("pdesc").value = "";
 }
+
+const resume = document.getElementById("mRC");
