@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resumify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="mainContainerWrapper"></div>
+      <div class="lhsdiv">
+        <div class="lhsdivWrapper">
+          <div class="l1">Attributes</div>
+          <div class="l2">
+            <p>First Name:</p>
+            <input type="text" id="fname" />
+          </div>
+          <div class="l2">
+            <p>Last Name:</p>
+            <input type="text" id="lname" />
+          </div>
+          <div class="l2">
+            <p>Gmail:</p>
+            <input type="email" id="gm" />
+          </div>
+          <div class="l2">
+            <p>Github:</p>
+            <input type="text" id="ghub" />
+          </div>
+          <div class="l2">
+            <p>Phone No:</p>
+            <input type="number" id="pnumb" />
+          </div>
+          <div class="l2">
+            <p>Location:</p>
+            <input type="text" id="loc" />
+          </div>
+          <div class="l2">
+            <p>Skills:</p>
+            <input type="" id="sk" />
+          </div>
+          <div class="l2">
+            <p>Education 10th(%):</p>
+            <input type="number" id="ed1" />
+          </div>
+          <div class="l2">
+            <p>Education 12th(%):</p>
+            <input type="number" id="ed2" />
+          </div>
+          <div class="l2">
+            <p>Aboutme:</p>
+            <input type="text" id="abtme" />
+          </div>
+          <div class="p1">
+            <p style="margin-top: 1vh">Project:</p>
+            <div class="holder">
+              <div class="holderlhs">
+                <input
+                  type="text"
+                  style="height: 4vh"
+                  placeholder="Project Name"
+                  id="pname"
+                />
+                <input
+                  type="text"
+                  placeholder="Project Description"
+                  style="height: 8vh"
+                  id="pdesc"
+                />
+              </div>
+              <div class="holderrhs">
+                <button onclick="createprojectli()">
+                  <i class="fa-sharp fa-solid fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <ul id="projectli"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="middiv">
+        <div class="mainResumeContainer"></div>
+        <button class="builderButton">
+          <div class="bb1">BUILD</div>
+          <div class="bb2">
+            <i class="fa-solid fa-rotate-right"></i>
+          </div>
+        </button>
+      </div>
+      <div class="rhsdiv">
+        <div class="rhsup">
+          <div class="t1"></div>
+          <div class="t2"></div>
+          <div class="t3"></div>
+          <div class="t4"></div>
+        </div>
+        <div class="rhsdown"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
